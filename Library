@@ -1141,6 +1141,22 @@ local themes = {
         ["Object Background"] = Color3.fromRGB(0, 85, 85),
         ["Object Border"] = Color3.fromRGB(0, 140, 140),
         ["Dropdown Option Background"] = Color3.fromRGB(0, 110, 110)
+    },
+
+    Blood = {
+        ["Accent"] = Color3.fromRGB(255, 0, 0),
+        ["Window Background"] = Color3.fromRGB(90, 0, 0),
+        ["Window Border"] = Color3.fromRGB(0, 0, 0),
+        ["Tab Background"] = Color3.fromRGB(65, 0, 0),
+        ["Tab Border"] = Color3.fromRGB(134, 0, 0),
+        ["Tab Toggle Background"] = Color3.fromRGB(70, 0, 0),
+        ["Section Background"] = Color3.fromRGB(75, 0, 0),
+        ["Section Border"] = Color3.fromRGB(125, 0, 0),
+        ["Text"] = Color3.fromRGB(180, 180, 190),
+        ["Disabled Text"] = Color3.fromRGB(180, 180, 190),
+        ["Object Background"] = Color3.fromRGB(85, 0, 0),
+        ["Object Border"] = Color3.fromRGB(140, 0, 0),
+        ["Dropdown Option Background"] = Color3.fromRGB(110, 0, 0)
     }
 }
 
@@ -1387,7 +1403,7 @@ function library:SetTheme(theme)
 end
 
 function library:GetThemes()
-    local themes = {"Default", "Midnight", "Aqua"}
+    local themes = {"Default", "Midnight", "Aqua", "Blood"}
 
     local folderpath = string.format("%s//themes", self.folder)
 
